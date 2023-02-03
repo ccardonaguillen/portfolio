@@ -1,30 +1,47 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeading, faC } from '@fortawesome/free-solid-svg-icons';
+import {
+    faHeading,
+    faBriefcase,
+    faC,
+    faCircleInfo,
+    faHouse,
+    faLaptopCode,
+    faUpRightFromSquare,
+} from '@fortawesome/free-solid-svg-icons';
 
 import './style.css';
+import NavItem from '../../components/NavItem';
+import LangButton from '../../components/LangButton';
+import FlagSpain from '../../assets/flags/spain';
+import FlagUK from '../../assets/flags/uk';
 
 export default function Header() {
+    const { t } = useTranslation();
     return (
         <div id="header">
-            <div class="container">
+            <div className="container">
                 <nav id="nav-items">
-                    <FontAwesomeIcon icon={faC} /> {/* Placeholder heading icon */}
                     <ul>
-                        <li>Home</li>
-                        <li>About Me</li>
-                        <li>Experience</li>
-                        <li>All Projects</li>
+                        <NavItem icon={faHouse} title={t('navItems.home')} />
+                        <NavItem icon={faCircleInfo} title={t('navItems.about')} />
+                        <NavItem icon={faBriefcase} title={t('navItems.experience')} />
+                        <NavItem icon={faLaptopCode} title={t('navItems.projects')} />
                     </ul>
                 </nav>
                 <div id="header-controls">
                     <ul>
-                        <li>Go To</li>
-                        <li>
-                            <button>EN</button>
-                            <button>ES</button>
+                        <li className="button-container">
+                            <LangButton lang="en">
+                                <FlagUK />
+                            </LangButton>
+                            <LangButton lang="es">
+                                <FlagSpain />
+                            </LangButton>
                         </li>
+                        {/* <NavItem icon={faUpRightFromSquare} title="Go To" /> */}
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,10 @@
+.nav-item-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.nav-item-container>svg {
+    font-size: 1.4rem;
+
+}

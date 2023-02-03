@@ -1,0 +1,8 @@
+{
+    "navItems": {
+        "home": "Home",
+        "about": "About Me",
+        "experience": "Experience",
+        "projects": "Projects"
+    }
+}

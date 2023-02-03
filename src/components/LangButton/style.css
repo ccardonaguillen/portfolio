@@ -1,0 +1,15 @@
+.language-button {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    appearance: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all ease-out 0.3s;
+}
+
+.language-button svg {
+    width: 2rem;
+}
