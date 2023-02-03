@@ -1,0 +1,25 @@
+#credits {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    width: 100%;
+    background-color: #B9C1DF55;
+    font-size: 1.2rem;
+}
+
+#credits a {
+    align-items: center;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+#credits a:visited {
+    color: black;
+}
+
+#credits svg {
+    height: 1.6rem;
+    color: black;
+}

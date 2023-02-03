@@ -1,7 +1,14 @@
-import './App.css';
+import Credits from './layouts/Credits';
+import Header from './layouts/Header';
 
 function App() {
-    return <div className="App"></div>;
+    return (
+        <div id="app">
+            <Header />
+            <main>placeholder</main>
+            <Credits project="portfolio" />
+        </div>
+    );
 }
 
 export default App;
