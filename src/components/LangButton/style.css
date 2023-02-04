@@ -7,7 +7,13 @@
     font-family: inherit;
     font-size: 1.4rem;
     text-transform: uppercase;
-    transition: all ease-out 0.3s;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.language-button:hover {
+    font-weight: 600;
+    color: orangered
 }
 
 .language-button svg {

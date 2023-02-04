@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faHeading,
     faBriefcase,
-    faC,
     faCircleInfo,
     faHouse,
     faLaptopCode,
     faUpRightFromSquare,
+    faBars,
 } from '@fortawesome/free-solid-svg-icons';
 
 import './style.css';
@@ -17,13 +16,21 @@ import NavItem from '../../components/NavItem';
 import LangButton from '../../components/LangButton';
 import FlagSpain from '../../assets/flags/spain';
 import FlagUK from '../../assets/flags/uk';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Header() {
     const { t } = useTranslation();
+    const [isMenuHidden, setIsMenuHidden] = useState(false);
+
+    function handleToggleMenu() {
+        setIsMenuHidden((currState) => !currState);
+    }
+
     return (
-        <div id="header">
+        <header>
             <div className="container">
-                <nav id="nav-items">
+                <FontAwesomeIcon icon={faBars} id="menu-toggle" onClick={handleToggleMenu} />
+                <nav id="nav-items" className={isMenuHidden ? 'collapse' : ''}>
                     <ul>
                         <NavItem icon={faHouse} title={t('navItems.home')} />
                         <NavItem icon={faCircleInfo} title={t('navItems.about')} />
@@ -45,6 +52,6 @@ export default function Header() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </header>
     );
 }
