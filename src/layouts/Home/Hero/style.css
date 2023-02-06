@@ -1,0 +1,78 @@
+section#hero {
+    box-sizing: border-box;
+    display: grid;
+    grid-template: auto auto auto auto / 1fr 40%;
+    grid-template-areas:
+        "name picture"
+        "heading picture"
+        "subheading picture"
+        "cta picture";
+    align-items: center;
+    align-content: center;
+    min-height: 65vh;
+    margin: 10rem 0;
+
+}
+
+#hero-name {
+    grid-area: name;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+#hero-heading {
+    grid-area: heading;
+    font-size: 3rem;
+}
+
+#hero-subheading {
+    grid-area: subheading;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.heading:nth-of-type(1) {
+    font-weight: 400;
+}
+
+#call-to-action {
+    grid-area: cta;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+#call-to-action>button {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 1rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+#call-to-action>button:hover {
+    background-color: lightblue;
+}
+
+#call-to-action svg {
+    height: 1.2rem;
+}
+
+#hero-picture {
+    grid-area: picture;
+    align-self: center;
+    justify-self: center;
+    padding: 4rem;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+#hero-picture svg,
+#hero-picture img {
+    width: 180px;
+    height: 180px
+}

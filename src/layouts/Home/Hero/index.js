@@ -1,6 +1,5 @@
 import React from 'react';
 import { faChevronDown, faEnvelope, faTurnDown, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './style.css';
@@ -10,8 +9,8 @@ export default function Hero() {
         <section id="hero">
             <h2 id="hero-name">Carlos Cardona</h2>
             <div id="hero-heading">
-                <h1>Reskilled astrophysicist</h1>
-                <h1>Passionate programmer</h1>
+                <h1 className="heading">Reskilled astrophysicist</h1>
+                <h1 className="heading">Passionate programmer</h1>
             </div>
             <div id="hero-subheading">
                 <p className="subheading">
@@ -32,7 +31,7 @@ export default function Hero() {
                     <h3>Leave a message</h3>
                 </button>
                 <button id="read-more">
-                    <h3>Read More</h3>
+                    <h3>Read more</h3>
                     <FontAwesomeIcon icon={faChevronDown} />
                 </button>
             </div>
