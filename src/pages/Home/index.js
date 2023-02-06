@@ -1,9 +1,17 @@
-import Credits from '../../layouts/Credits';
-import Header from '../../layouts/Header';
+import Hero from '../../layouts/Home/Hero';
+import About from '../../layouts/Home/About';
+import Contact from '../../layouts/Home/Contact';
+
 import './style.css';
 
 function Home() {
-    return <div id="home"></div>;
+    return (
+        <main id="home">
+            <Hero />
+            <About />
+            <Contact />
+        </main>
+    );
 }
 
 export default Home;
