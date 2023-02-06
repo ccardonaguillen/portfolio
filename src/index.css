@@ -25,9 +25,16 @@ ul {
 }
 
 button {
+  appearance: none;
   font-size: inherit;
   font-family: inherit;
   background-color: #00000000;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 #app {
