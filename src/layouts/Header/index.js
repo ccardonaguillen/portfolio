@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faHeading,
     faBriefcase,
     faCircleInfo,
     faHouse,
     faLaptopCode,
-    faUpRightFromSquare,
     faBars,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -16,7 +16,6 @@ import NavItem from '../../components/NavItem';
 import LangButton from '../../components/LangButton';
 import FlagSpain from '../../assets/flags/spain';
 import FlagUK from '../../assets/flags/uk';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Header() {
     const { t } = useTranslation();
@@ -32,10 +31,14 @@ export default function Header() {
                 <FontAwesomeIcon icon={faBars} id="menu-toggle" onClick={handleToggleMenu} />
                 <nav id="nav-items" className={isMenuHidden ? 'collapse' : ''}>
                     <ul>
-                        <NavItem icon={faHouse} title={t('navItems.home')} />
-                        <NavItem icon={faCircleInfo} title={t('navItems.about')} />
-                        <NavItem icon={faBriefcase} title={t('navItems.experience')} />
-                        <NavItem icon={faLaptopCode} title={t('navItems.projects')} />
+                        <NavItem to="/" icon={faHouse} title={t('navItems.home')} />
+                        <NavItem to="about" icon={faCircleInfo} title={t('navItems.about')} />
+                        <NavItem
+                            to="experience"
+                            icon={faBriefcase}
+                            title={t('navItems.experience')}
+                        />
+                        <NavItem to="projects" icon={faLaptopCode} title={t('navItems.projects')} />
                     </ul>
                 </nav>
                 <div id="header-controls">

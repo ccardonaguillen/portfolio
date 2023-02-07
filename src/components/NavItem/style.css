@@ -1,4 +1,4 @@
-.nav-item-container {
+.nav-item-container>a {
     display: flex;
     align-items: center;
     gap: 0.6rem;
@@ -6,12 +6,18 @@
     /* transition: all 0.2s ease-out; */
 }
 
-.nav-item-container:hover {
-    color: orangered;
+
+.nav-item-container>a.active {
     text-decoration: underline;
     text-decoration-thickness: 0.2rem;
     text-underline-offset: 0.7rem;
 }
+
+.nav-item-container:hover {
+    color: orangered;
+    transform: scale(1.05);
+}
+
 
 .nav-item-container>svg {
     font-size: 1.4rem;
