@@ -5,11 +5,11 @@ import './style.css';
 export default function About() {
     return (
         <section id="home-about">
-            <div className="section-decor">
-                <img src="#" alt="" />
-            </div>
             <div className="section-heading">
                 <h3>Who Am I?</h3>
+            </div>
+            <div className="section-decor">
+                <img src="#" alt="" />
             </div>
             <div className="section-content">
                 <p className="section-paragraph">

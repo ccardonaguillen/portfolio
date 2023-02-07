@@ -4,19 +4,18 @@ section#home-about {
     grid-template-areas:
         "decoration heading"
         "decoration cont";
+    row-gap: 4rem;
     column-gap: 10rem;
     align-items: center;
     margin: 10rem 0;
     line-height: 2.5rem;
-
 }
 
 .section-heading {
     grid-area: heading;
     justify-self: center;
     font-size: 2.6rem;
-    margin-bottom: 4rem;
-
+    text-transform: uppercase;
 }
 
 .section-decor {
@@ -33,4 +32,19 @@ section#home-about {
     gap: 1rem;
     font-size: 1.5rem;
     text-align: justify;
+}
+
+@media screen and (max-width:1000px) {
+    section#home-about {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem
+    }
+
+    .section-decor {
+        width: min(600px, 70vw);
+        height: 250px;
+
+    }
+
 }

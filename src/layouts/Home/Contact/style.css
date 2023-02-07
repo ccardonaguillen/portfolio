@@ -57,7 +57,7 @@ section#home-contact {
 
 #contact-message input:focus,
 #contact-message textarea:focus {
-    box-shadow: 0 1px 0 teal;
+    /* box-shadow: 0 1px 0 teal; */
     border-color: teal;
 
     /* background-color: lightblue; */

@@ -12,6 +12,9 @@ export default function Hero() {
                 <h1 className="heading">Reskilled astrophysicist</h1>
                 <h1 className="heading">Passionate programmer</h1>
             </div>
+            <div id="hero-picture">
+                <FontAwesomeIcon icon={faUser} id="profile-picture" />
+            </div>
             <div id="hero-subheading">
                 <p className="subheading">
                     Hi, I'm <span className="highlight">Carlos</span>
@@ -35,9 +38,7 @@ export default function Hero() {
                     <FontAwesomeIcon icon={faChevronDown} />
                 </button>
             </div>
-            <div id="hero-picture">
-                <FontAwesomeIcon icon={faUser} id="profile-picture" />
-            </div>
+
             {/* <img src="" alt="This is me!" id="profile-picture" /> */}
         </section>
     );
