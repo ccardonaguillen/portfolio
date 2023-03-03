@@ -18,13 +18,13 @@ export default function Experience() {
                     path
                 </p>
                 <div className="call-to-action">
-                    <button id="go-to-edcuation">
+                    {/* <button id="go-to-edcuation">
                         <FontAwesomeIcon icon={faSchool} />
 
                         <span>My education</span>
-                    </button>
+                    </button> */}
                     <button id="download-resume">
-                        <span>Download resumé</span>
+                        <span>Download full resumé</span>
                         <FontAwesomeIcon icon={faDownload} />
                     </button>
                 </div>
