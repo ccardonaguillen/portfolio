@@ -1,7 +1,5 @@
 import './style.css';
 
-function Projects() {
+export default function Projects() {
     return <main id="projects">Projects</main>;
 }
-
-export default Projects;

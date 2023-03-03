@@ -1,21 +1,20 @@
-import React from 'react';
-import { faChevronDown, faEnvelope, faTurnDown, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './style.css';
 
 export default function Hero() {
     return (
-        <section id="hero">
-            <h2 id="hero-name">Carlos Cardona</h2>
-            <div id="hero-heading">
+        <section className="hero">
+            <h2 className="hero-name">Carlos Cardona</h2>
+            <div className="hero-heading">
                 <h1 className="heading">Reskilled astrophysicist</h1>
                 <h1 className="heading">Passionate programmer</h1>
             </div>
-            <div id="hero-picture">
+            <div className="hero-picture">
                 <FontAwesomeIcon icon={faUser} id="profile-picture" />
             </div>
-            <div id="hero-subheading">
+            <div className="hero-subheading">
                 <p className="subheading">
                     Hi, I'm <span className="highlight">Carlos</span>
                 </p>
@@ -27,14 +26,13 @@ export default function Hero() {
                     leo vel orci.
                 </p>
             </div>
-            <div id="call-to-action">
+            <div className="call-to-action">
                 <button id="go-to-contact">
                     <FontAwesomeIcon icon={faEnvelope} />
-
-                    <h3>Leave a message</h3>
+                    <span>Leave a message</span>
                 </button>
                 <button id="read-more">
-                    <h3>Read more</h3>
+                    <span>Read more</span>
                     <FontAwesomeIcon icon={faChevronDown} />
                 </button>
             </div>

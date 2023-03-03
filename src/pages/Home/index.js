@@ -13,7 +13,7 @@ export default function Home() {
 
             <About />
             <SpinningCarousel>
-                {devItems.map((item, idx) => (
+                {Object.values(devItems).map((item, idx) => (
                     <div key={item.name}>
                         {/* <p className="num">{idx}</p> */}
                         <div>

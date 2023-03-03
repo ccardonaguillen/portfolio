@@ -32,6 +32,10 @@ ul {
   margin: 0;
 }
 
+ul {
+  padding: 0;
+}
+
 button {
   appearance: none;
   font-size: inherit;

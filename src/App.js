@@ -1,4 +1,4 @@
-import { BrowserRouter, RouterProvider, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Credits from './layouts/Credits';
 import Header from './layouts/Header';

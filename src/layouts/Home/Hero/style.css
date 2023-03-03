@@ -1,4 +1,4 @@
-section#hero {
+#home .hero {
     box-sizing: border-box;
     display: grid;
     grid-template: auto auto auto auto / 1fr 40%;
@@ -14,18 +14,18 @@ section#hero {
 
 }
 
-#hero-name {
+.hero-name {
     grid-area: name;
     font-size: 2.4rem;
     font-weight: 500;
 }
 
-#hero-heading {
+.hero-heading {
     grid-area: heading;
     font-size: 3rem;
 }
 
-#hero-subheading {
+.hero-subheading {
     grid-area: subheading;
     margin: 2rem 0;
     font-size: 1.6rem;
@@ -36,33 +36,34 @@ section#hero {
     font-weight: 400;
 }
 
-#call-to-action {
+.call-to-action {
     grid-area: cta;
     display: flex;
     gap: 1rem;
-    font-size: 1.2rem;
 }
 
-#call-to-action>button {
+.call-to-action>button {
     appearance: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1.2rem;
     border: 2px solid black;
     border-radius: 3rem;
     cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
-#call-to-action>button:hover {
+.call-to-action>button:hover {
     background-color: lightblue;
 }
 
-#call-to-action svg {
+.call-to-action svg {
     height: 1.2rem;
 }
 
-#hero-picture {
+.hero-picture {
     grid-area: picture;
     align-self: center;
     justify-self: center;
@@ -71,26 +72,26 @@ section#hero {
     background-color: grey;
 }
 
-#hero-picture svg,
-#hero-picture img {
+.hero-picture svg,
+.hero-picture img {
     width: 180px;
     height: 180px
 }
 
 
 @media screen and (max-width:1000px) {
-    section#hero {
+    section.hero {
         display: flex;
         flex-direction: column;
         align-items: center;
 
     }
 
-    #hero-name {
+    .hero-name {
         font-size: 2rem;
     }
 
-    #hero-heading {
+    .hero-heading {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -99,11 +100,11 @@ section#hero {
 
     }
 
-    #hero-picture {
+    .hero-picture {
         margin-top: 2rem;
     }
 
-    #hero-subheading {
+    .hero-subheading {
         text-align: center;
     }
 }
