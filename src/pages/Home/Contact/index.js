@@ -8,7 +8,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 export default function Contact() {
     return (
         <section id="home-contact">
-            <h3 className="section-heading">Find me on</h3>
+            <h3 className="heading">Find me on</h3>
             <div id="contact-links">
                 <a href={'https://github.com/ccardonaguillen/'}>
                     <FontAwesomeIcon icon={faGithub} id="github-logo" alt="Github" />
