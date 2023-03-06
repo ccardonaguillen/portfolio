@@ -1,12 +1,13 @@
-import ExperienceCard from '../../components/ExperienceCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faDownload, faGears, faSchool } from '@fortawesome/free-solid-svg-icons';
+
+import EducationCard from '../../components/Card/EducationCard';
+import ExperienceCard from '../../components/Card/ExperienceCard';
 
 import workExperience from '../../assets/lists/workExperience';
 import education from '../../assets/lists/education';
 
 import './style.css';
-import EducationCard from '../../components/EducationCard';
 
 export default function Experience() {
     return (
@@ -31,14 +32,14 @@ export default function Experience() {
             </section>
             <section id="work">
                 {workExperience.map((details) => (
-                    <ExperienceCard {...details} />
+                    <ExperienceCard key={details.title} {...details} />
                 ))}
             </section>
             <section id="education">
                 <h2>Education</h2>
                 <div className="education-container">
                     {education.map((details) => (
-                        <EducationCard {...details} />
+                        <EducationCard key={details.title} {...details} />
                     ))}
                 </div>
             </section>

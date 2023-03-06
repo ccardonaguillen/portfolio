@@ -1,0 +1,63 @@
+.card.project .heading {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+
+.card.project .heading>.title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icon-container {
+    display: flex;
+    gap: 0.5rem
+}
+
+.project-icon {
+    font-size: 1.8rem;
+}
+
+.card.project .dev-icon {
+    width: 2.2rem;
+}
+
+.card.project>.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card.project .preview {
+    width: 100%;
+    aspect-ratio: 2/1;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.card.project .description {
+    text-align: justify;
+}
+
+.card.project>.footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.project a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.project a:hover {
+    background-color: aliceblue;
+}

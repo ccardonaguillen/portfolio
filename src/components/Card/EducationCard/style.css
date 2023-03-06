@@ -1,0 +1,27 @@
+.card.education .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card.education .logo {
+    height: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+.card.education .title {
+    margin-bottom: 0.5rem;
+}
+
+.card.education .dates {
+    margin-top: 1rem;
+}
+
+.card.education ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+    list-style-type: none;
+}

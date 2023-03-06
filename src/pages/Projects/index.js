@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faChessBoard, faEarthEurope } from '@fortawesome/free-solid-svg-icons';
 
 import { apps, games } from '../../assets/lists/projects';
-import ProjectCard from '../../components/ProjectCard';
+import ProjectCard from '../../components/Card/ProjectCard';
 
 import './style.css';
 

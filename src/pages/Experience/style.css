@@ -50,3 +50,12 @@
     font-size: 3rem;
     /* text-decoration: underline; */
 }
+
+.education-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 3rem;
+    width: 100%;
+
+}
