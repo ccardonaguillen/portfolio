@@ -5,11 +5,18 @@
     column-gap: 0.8rem;
 }
 
-.card.project .heading>.title {
+.card.project .title {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.card.project .title:hover {
+    white-space: normal;
+    overflow: auto;
+
+}
+
 
 .icon-container {
     display: flex;
@@ -60,4 +67,14 @@
 
 .project a:hover {
     background-color: aliceblue;
+}
+
+@media screen and (max-width: 450px) {
+    .card.project>.footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
 }

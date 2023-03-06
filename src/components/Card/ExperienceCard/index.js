@@ -9,10 +9,11 @@ export default function ExperienceCard(props) {
             <div className="heading">
                 <img src={logo} alt="" className="logo" />
                 <h3 className="title">{title}</h3>
+
+                <em className="location">{location}</em>
                 <span className="dates">
                     {startDate} &ndash; {endDate || 'Present'}
                 </span>
-                <em className="location">{location}</em>
             </div>
             <div className="content">
                 <p className="description">{description}</p>
