@@ -31,7 +31,7 @@
     font-weight: 500;
 }
 
-#experience section#work {
+section#work {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,7 @@
     margin: 5rem 0;
 }
 
-#experience section#education {
+section#education {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,4 +58,12 @@
     gap: 3rem;
     width: 100%;
 
+}
+
+@media screen and (max-width: 1000px) {
+    .education-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

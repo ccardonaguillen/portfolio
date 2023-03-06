@@ -36,7 +36,15 @@ input[type="radio"] {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3rem;
     margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+    #category-selector {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-items: center;
+    }
 }
