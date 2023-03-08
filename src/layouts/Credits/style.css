@@ -15,11 +15,7 @@
     font-weight: 500;
 }
 
-#credits a:visited {
-    color: black;
-}
 
 #credits svg {
     height: 1.6rem;
-    color: black;
 }

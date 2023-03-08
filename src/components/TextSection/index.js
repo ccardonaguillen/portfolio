@@ -27,7 +27,7 @@ const SectionStyle = styled.section`
         grid-area: decoration;
         width: min(400px, 30vw);
         height: 350px;
-        border: 1px solid black;
+        border: 1px solid var(--border-color);
         border-radius: 5px;
     }
 

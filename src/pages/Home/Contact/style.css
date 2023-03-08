@@ -19,7 +19,6 @@ section#home-contact {
 }
 
 #contact-links svg {
-    color: black;
     height: 4rem;
 }
 
@@ -62,7 +61,6 @@ section#home-contact {
     /* box-shadow: 0 1px 0 teal; */
     border-color: teal;
 
-    /* background-color: lightblue; */
 }
 
 #contact-message input::placeholder,
@@ -79,8 +77,5 @@ section#home-contact {
     padding: 0.5rem 2rem;
     border-radius: 4rem;
     font-weight: 500;
-}
-
-#send-message:hover {
-    background-color: lightblue;
+    border: 2px solid;
 }

@@ -14,7 +14,6 @@
 .card.project .title:hover {
     white-space: normal;
     overflow: auto;
-
 }
 
 
@@ -40,7 +39,7 @@
 .card.project .preview {
     width: 100%;
     aspect-ratio: 2/1;
-    border: 1px solid black;
+    border: 1px solid;
     border-radius: 4px;
 }
 
@@ -59,15 +58,13 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.65rem 1.5rem;
-    border: 1px solid black;
+    border: 1px solid;
     border-radius: 50px;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.project a:hover {
-    background-color: aliceblue;
-}
+
 
 @media screen and (max-width: 450px) {
     .card.project>.footer {

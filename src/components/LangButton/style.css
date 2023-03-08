@@ -13,7 +13,7 @@
 
 .language-button:hover {
     font-weight: 600;
-    color: orangered
+    background-color: transparent;
 }
 
 .language-button svg {

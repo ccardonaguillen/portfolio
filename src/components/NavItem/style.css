@@ -13,10 +13,10 @@
     text-underline-offset: 0.7rem;
 }
 
-.nav-item-container:hover {
-    color: orangered;
+.nav-item-container a:hover {
     transform: scale(1.05);
 }
+
 
 
 .nav-item-container>svg {

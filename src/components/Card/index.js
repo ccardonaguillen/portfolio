@@ -6,7 +6,7 @@ const CardStyle = styled.div`
     align-items: center;
     box-sizing: border-box;
     padding: 3rem 4rem;
-    box-shadow: 0px 0px 15px hsl(0, 0%, 80%);
+    box-shadow: 0px 0px 15px var(--shadow-color);
     border-radius: 3px;
 
     & > * {

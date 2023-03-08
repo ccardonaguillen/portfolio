@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: hsla(227, 37%, 80%, 0.333);
+    background-color: var(--header-color);
 }
 
 #menu-toggle {

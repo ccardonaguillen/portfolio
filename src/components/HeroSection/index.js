@@ -6,6 +6,7 @@ const HeroStyle = styled.section`
     flex-direction: column;
     align-items: center;
     margin: 15rem 0;
+    color: var(--text-color);
 
     & > .heading {
         font-size: 4rem;
@@ -30,15 +31,11 @@ const HeroStyle = styled.section`
         justify-content: center;
         gap: 0.75rem;
         padding: 1rem 2.5rem;
-        border: 2px solid black;
+        border: 2px solid;
         border-radius: 3rem;
         font-size: 1.5rem;
         font-weight: 500;
         cursor: pointer;
-    }
-
-    & button:hover {
-        background-color: lightblue;
     }
 
     & button > svg {
