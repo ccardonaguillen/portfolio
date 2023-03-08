@@ -1,8 +1,158 @@
-{
-    "navItems": {
-        "home": "Home",
-        "about": "About me",
-        "experience": "Experience",
-        "projects": "Projects"
+{   
+    "common": {
+        "present": "Present"
+    },
+    "header": {
+        "navItems": {
+            "home": "Home",
+            "about": "About me",
+            "experience": "Experience",
+            "projects": "Projects"
+        }
+    },
+    "footer": "Design and code",
+    "home": {
+        "hero": {
+            "header1": "Reskilled astrophysicist",
+            "header2": "Passionate programmer",
+            "introduction": "Hi, I'm Carlos",
+            "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget arcu dictum varius duis. At in tellus integer feugiat scelerisque varius. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Eu scelerisque felis imperdiet proin fermentum leo vel orci.",
+            "cta": {
+                "message": "Leave a message",
+                "readMore": "Read more"
+            }
+        },
+        "about": {
+            "header": "Who am I?",
+            "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget arcu dictum varius duis. At in tellus integer feugiat scelerisque varius. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Eu scelerisque felis imperdiet proin fermentum leo vel orci.",
+            "paragraph2": "Ultricies integer quis auctor elit sed vulputate mi sit amet. Hac habitasse platea dictumst quisque sagittis purus sit. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Eu tincidunt tortor aliquam nulla facilisi cras fermentum."
+        },
+        "contact": {
+            "header": "Find me on",
+            "subheading": "Or leave a messsage below and I will get back to you as soon as possible",
+            "form": {
+                "name": "Name",
+                "email": "Email address",
+                "message": "Your message",
+                "send": "Send"
+            }
+        }
+    },
+    "about": {
+        "section1": {
+            "header": "Placeholder",
+            "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget arcu dictum varius duis. At in tellus integer feugiat scelerisque varius. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Eu scelerisque felis imperdiet proin fermentum leo vel orci.",
+            "paragraph2": "Ultricies integer quis auctor elit sed vulputate mi sit amet. Hac habitasse platea dictumst quisque sagittis purus sit. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Eu tincidunt tortor aliquam nulla facilisi cras fermentum."
+        },
+        "section2": {
+            "header": "Placeholder",
+            "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget arcu dictum varius duis. At in tellus integer feugiat scelerisque varius. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Eu scelerisque felis imperdiet proin fermentum leo vel orci.",
+            "paragraph2": "Ultricies integer quis auctor elit sed vulputate mi sit amet. Hac habitasse platea dictumst quisque sagittis purus sit. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Eu tincidunt tortor aliquam nulla facilisi cras fermentum."
+        },
+        "section3": {
+            "header": "Placeholder",
+            "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget arcu dictum varius duis. At in tellus integer feugiat scelerisque varius. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Eu scelerisque felis imperdiet proin fermentum leo vel orci.",
+            "paragraph2": "Ultricies integer quis auctor elit sed vulputate mi sit amet. Hac habitasse platea dictumst quisque sagittis purus sit. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Eu tincidunt tortor aliquam nulla facilisi cras fermentum."
+        }
+    },
+    "experience": {
+        "hero": {
+            "subheading": "Keep reading to check where my journey has taken me through a short but winding path",
+            "cta": {
+                "resume": "Download full resumé"
+            }
+        },
+        "work": {
+            "opportunityNetwork": {
+                "title": "Junior Software Engineer",
+                "startDate": "March 2023",
+                "endDate": "",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget velit aliquet sagittis id consectetur purus ut faucibus. Facilisi morbi tempus iaculis urna id volutpat lacus. Cursus risus at ultrices mi. Vestibulum morbi blandit cursus risus at ultrices mi. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Donec adipiscing tristique risus nec feugiat. Dolor sed viverra ipsum nunc aliquet bibendum enim."
+            },
+            "IAC": {
+                "title": "Predoctoral Fellow",
+                "startDate": "May 2017",
+                "endDate": "April 2022",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget velit aliquet sagittis id consectetur purus ut faucibus. Facilisi morbi tempus iaculis urna id volutpat lacus. Cursus risus at ultrices mi. Vestibulum morbi blandit cursus risus at ultrices mi. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Donec adipiscing tristique risus nec feugiat. Dolor sed viverra ipsum nunc aliquet bibendum enim."
+            }
+        },
+        "education": {
+            "header": "Education",
+            "phd": {
+                "title": "PhD in Physics",
+                "notes": {
+                    "1": "Magna Cum Laude"
+                }
+            },
+            "master": {
+                "title": "Astrophysics MSc",
+                "notes": {
+                    "1": "Specialization in Observations and Instrumentation",
+                    "2": "Graduated with distinction in the master's dissertation"
+                }
+            },
+            "degree": {
+                "title": "Physics BSc",
+                "notes": {
+                    "1": "Graduated with distinction in the final degree project"
+                }
+            }
+        }
+    },
+    "projects": {
+        "categories": {
+            "all": "All",
+            "featured": "Featured",
+            "apps": "Web-apps",
+            "games": "Browser games"
+        },
+        "card": {
+            "live": "Live version",
+            "source": "Source code"
+        },
+        "musicLibrary": {
+            "title": "Music Library",
+            "description": "Music library where the user can store the information of the albums they own or want. The user is then able to filter the database based on different criteria to using advanced patterns (examples are included in the filter text input). Table contents can also be sorted out by artist, album or release year. Any individual entry can be deleted manually."
+        },
+        "cv": {
+            "title": "CV Generator",
+            "description": "Generate your CV based on a give template inputting your own information. This project is the first contact with React and it meant to serve as an introduction to its basic concepts, e.g., props, component states and rendering."
+        },
+        "calculator": {
+            "title": "Calculator",
+            "description": "Fully working calculator able to sum, subtract, multiply and divide any two decimal numbers. The user is also able to carry the result of an operation onto the next. A failsafe is also in place when attempting to divide by zero. The calculator includes a function to correct the input at any point by deleting characters. It also includes full keyboard support."
+        },
+        "battleship": {
+            "title": "Battleship",
+            "description": "A minimalist design for the Battleship game. This project is set out as an introduction to test drive development (TDD). As part of this philosophy, test are arranged before the actual functionalities are implemented in the game code."
+        },
+        "onePiece": {
+            "title": "One Piece: Wanted",
+            "description": "One Piece themed memory card game. The goal is to locate the whereabouts of all the members of the Worst Generation, without repetition. The aim of this project was to React concepts such as functional hooks and lifecycle methods."
+        },
+        "etchASketch": {
+            "title": "Etch-A-Sketch",
+            "description": "Interactive web-based Etch-A-Sketch where you can draw while holding any mouse button. It includes the possibility to modify the density of the grid, i.e. the number of drawing squares (1–100). Additionally it includes three different paint modes."
+        },
+        "weather": {
+            "title": "Weather app",
+            "description": "Webb app to check the weather forecast in any location. want. The user is then able to filter the database based on different criteria to using advanced patterns (examples are included in the filter text input). Table contents can also be sorted out by artist, album or release year. Any individual entry can be deleted manually."
+        },
+        "todo": {
+            "title": "To-do manager",
+            "description": "To-do task manager that allows the user to create, edit and delete tasks, grouping them in projects."
+        },
+        "gif": {
+            "title": "Fetch me a gif",
+            "description": "Simple webb app to retrieve a GIF given some keywords designed as a practice exercise to learn the basics of asynchronous code and how to work with APIs"
+        },
+        "ticTacToe": {
+            "title": "Tic-Tac-Toe",
+            "description": "Game of Tic-Tac-Toe. You can play against another human player or against a robot. The game keeps the score of the rounds played and the whole game can be reset."
+        },
+        "rockPaperScissors": {
+            "title": "Rock, paper, scissors",
+            "description": "First project part of The Odin Project Full JavaScript Course meant to introduce the aspiring programmer to the basic concepts of how to implement interactivity to a webpage using JavaScript"
+        }
     }
 }
