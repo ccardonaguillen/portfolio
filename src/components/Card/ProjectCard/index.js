@@ -1,18 +1,22 @@
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+
 import devItems from '../../../assets/devicons';
-import './style.css';
 import StyledCard from '..';
 
+import './style.css';
+
 export default function ProjectCard(props) {
-    const { name, repository, live, preview, icon, description, techStack, otherTools } = props;
+    const { id, repository, live, preview, icon, techStack, otherTools } = props;
+    const { t } = useTranslation();
 
     return (
         <StyledCard className="card project">
             <div className="heading">
                 <FontAwesomeIcon icon={icon} className="project-icon" />
-                <h3 className="title">{name}</h3>
+                <h3 className="title">{t(`projects.${id}.title`)}</h3>
                 <div className="icon-container">
                     {techStack.map((item) => (
                         <img
@@ -27,7 +31,7 @@ export default function ProjectCard(props) {
             </div>
             <div className="content">
                 <img src={preview} alt="preview" className="preview" />
-                <p className="description">{description}</p>
+                <p className="description">{t(`projects.${id}.description`)}</p>
             </div>
 
             <div className="footer">
@@ -36,7 +40,7 @@ export default function ProjectCard(props) {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Live version
+                    {t('projects.card.live')}
                     <FontAwesomeIcon icon={faLink} />
                 </a>
                 <a
@@ -44,7 +48,7 @@ export default function ProjectCard(props) {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Source code
+                    {t('projects.card.source')}
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
             </div>

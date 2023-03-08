@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import Hero from './Hero';
 import TextSection from '../../components/TextSection';
 import Contact from './Contact';
@@ -7,30 +9,19 @@ import devItems from '../../assets/devicons';
 import './style.css';
 
 export default function Home() {
+    const { t } = useTranslation();
     return (
         <main id="home">
             <Hero />
             <TextSection
                 id="home-about"
                 alignment="right"
-                heading="Who am I?"
+                heading={t('home.about.header')}
                 decoration={<img src="#" alt="" />}
             >
-                <p className="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Eget arcu dictum varius duis. At in
-                    tellus integer feugiat scelerisque varius. Nec feugiat in fermentum posuere urna
-                    nec tincidunt praesent semper. Eu scelerisque felis imperdiet proin fermentum
-                    leo vel orci.
-                </p>
-                <p className="paragraph">
-                    Ultricies integer quis auctor elit sed vulputate mi sit amet. Hac habitasse
-                    platea dictumst quisque sagittis purus sit. Morbi tincidunt augue interdum velit
-                    euismod in pellentesque massa. Mauris pellentesque pulvinar pellentesque
-                    habitant morbi tristique senectus et netus. Eu tincidunt tortor aliquam nulla
-                    facilisi cras fermentum.
-                </p>
-            </TextSection>{' '}
+                <p className="paragraph">{t('home.about.paragraph1')}</p>
+                <p className="paragraph">{t('home.about.paragraph2')}</p>
+            </TextSection>
             <SpinningCarousel>
                 {Object.values(devItems).map((item, idx) => (
                     <div key={item.name}>

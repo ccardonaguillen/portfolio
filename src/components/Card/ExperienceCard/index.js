@@ -1,22 +1,28 @@
+import { useTranslation } from 'react-i18next';
+
 import devItems from '../../../assets/devicons';
 import StyledCard from '..';
+
 import './style.css';
 
 export default function ExperienceCard(props) {
-    const { logo, title, startDate, endDate, location, description, competences } = props;
+    const { id, logo, location, competences } = props;
+    const { t } = useTranslation();
+
     return (
         <StyledCard className="experience">
             <div className="heading">
                 <img src={logo} alt="" className="logo" />
-                <h3 className="title">{title}</h3>
+                <h3 className="title">{t(`experience.work.${id}.title`)}</h3>
 
                 <em className="location">{location}</em>
                 <span className="dates">
-                    {startDate} &ndash; {endDate || 'Present'}
+                    {t(`experience.work.${id}.startDate`)} &ndash;{' '}
+                    {t(`experience.work.${id}.endDate`) || t('common.present')}
                 </span>
             </div>
             <div className="content">
-                <p className="description">{description}</p>
+                <p className="description">{t(`experience.work.${id}.description`)}</p>
             </div>
             <div className="footer">
                 <div className="competence-container">

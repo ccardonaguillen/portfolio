@@ -14,7 +14,7 @@ const HeroStyle = styled.section`
 
     & > .subheading {
         margin: 1.5rem 0;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 3rem;
     }
 

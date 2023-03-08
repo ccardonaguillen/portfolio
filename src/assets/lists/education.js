@@ -1,33 +1,37 @@
+import i18n from '../../utils/i18n';
 import logoULL from '../../assets/logos/ull-circle.svg';
 import logoUnizar from '../../assets/logos/unizar-blue.png';
 
 const education = [
     {
+        id: 'phd',
         logo: logoULL,
-        title: 'PhD in Physics',
+        title: i18n.t('experience.education.phd.title'),
         startDate: '2017',
         endDate: '2022',
         location: 'Universidad de La Laguna (ES)',
-        notes: ['Magna Cum Laude'],
+        notes: [i18n.t('experience.education.phd.description.1')],
     },
     {
+        id: 'master',
         logo: logoULL,
-        title: 'Astrophysics MSc',
+        title: i18n.t('experience.education.master.title'),
         startDate: '2014',
         endDate: '2016',
         location: 'Universidad de La Laguna (ES)',
         notes: [
-            'Specialization in Observations and Instrumentation',
-            "Graduated with distinction in the master's dissertation",
+            i18n.t('experience.education.master.description.1'),
+            i18n.t('experience.education.master.description.2'),
         ],
     },
     {
+        id: 'degree',
         logo: logoUnizar,
-        title: 'Physics BSc',
+        title: i18n.t('experience.education.degree.title'),
         startDate: '2017',
         endDate: '2022',
         location: 'Universidad de Zaragoza (ES)',
-        notes: ['Graduated with distinction in the final degree project'],
+        notes: [i18n.t('experience.education.degree.description.1')],
     },
 ];
 

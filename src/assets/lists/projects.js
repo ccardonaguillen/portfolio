@@ -12,89 +12,77 @@ import {
     faHandScissors,
 } from '@fortawesome/free-solid-svg-icons';
 
+import i18n from '../../utils/i18n';
+
+const t = i18n.t;
+
 const apps = [
     {
-        name: 'Music library',
+        id: 'musicLibrary',
+        name: t('projects.musicLibrary.title'),
         repository: 'music-library',
         live: null,
         preview: '',
         icon: faCompactDisc,
-        description:
-            'Music library where the user can store the information of the albums they own or' +
-            ' want. The user is then able to filter the database based on different criteria to' +
-            ' using advanced patterns (examples are included in the filter text input). Table' +
-            ' contents can also be sorted out by artist, album or release year. Any individual' +
-            ' entry can be deleted manually.',
+        description: t('projects.musicLibrary.description'),
         techStack: ['react', 'firebase'],
         otherTools: ['Discogs API'],
         featured: true,
     },
     {
-        name: 'CV generator',
+        id: 'cv',
+        name: t('projects.cv.title'),
         repository: 'cv-generator',
         live: null,
         preview: '',
         icon: faFileInvoice,
-        description:
-            'Generate your CV based on a give template inputting your own information. This' +
-            ' project is the first contact with React and it meant to serve as an introduction to' +
-            ' its basic concepts, e.g., props, component states and rendering.',
+        description: t('projects.cv.description'),
         techStack: ['react'],
         otherTools: [],
         featured: true,
     },
     {
-        name: 'Weather app',
+        id: 'weather',
+        name: t('projects.weather.title'),
         repository: 'weather-app',
         live: null,
         preview: '',
         icon: faCloudSunRain,
-        description:
-            'Webb app to check the weather forecast in any location. ' +
-            ' want. The user is then able to filter the database based on different criteria to' +
-            ' using advanced patterns (examples are included in the filter text input). Table' +
-            ' contents can also be sorted out by artist, album or release year. Any individual' +
-            ' entry can be deleted manually.',
+        description: t('projects.weather.description'),
         techStack: ['html', 'css', 'js', 'webpack'],
         otherTools: ['OpenWeatherMap API', 'Geolocation API'],
     },
     {
-        name: 'To-do manager',
+        id: 'todo',
+        name: t('projects.todo.title'),
         repository: 'todo-list',
         live: null,
         preview: '',
         icon: faClipboardCheck,
-        description:
-            'To-do task manager that allows the user to create, edit and delete tasks, grouping' +
-            'them in projects.',
+        description: t('projects.todo.description'),
         techStack: ['html', 'css', 'js', 'webpack'],
         otherTools: ['OpenWeatherMap API', 'Geolocation API'],
     },
     {
-        name: 'Calculator',
+        id: 'calculator',
+        name: t('projects.calculator.title'),
         repository: 'calculator-webpage',
         live: null,
         preview: '',
         icon: faCalculator,
-        description:
-            'Fully working calculator able to sum, subtract, multiply and divide any two decimal' +
-            ' numbers. The user is also able to carry the result of an operation onto the next.' +
-            ' A failsafe is also in place when attempting to divide by zero. The calculator' +
-            ' includes a function to correct the input at any point by deleting characters. It' +
-            ' also includes full keyboard support.',
+        description: t('projects.calculator.description'),
         techStack: ['html', 'css', 'js'],
         otherTools: [],
         featured: true,
     },
     {
-        name: 'Fetch me a gif',
+        id: 'gif',
+        name: t('projects.gif.title'),
         repository: 'fetch-me-a-gif',
         live: null,
         preview: '',
         icon: faImage,
-        description:
-            'Simple webb app to retrieve a GIF given some keywords designed as a practice exercise' +
-            'to learn the basics of asynchronous code and how to work with APIs',
+        description: t('projects.gif.description'),
         techStack: ['html', 'css', 'js', 'webpack'],
         otherTools: ['Giphy API'],
     },
@@ -102,71 +90,61 @@ const apps = [
 
 const games = [
     {
-        name: 'Battleship',
+        id: 'battleship',
+        name: t('projects.battleship.title'),
         repository: 'battleship',
         live: null,
         preview: '',
         icon: faShip,
-        description:
-            'A minimalist design for the Battleship game. This project is set out as an introduction' +
-            ' to test drive development (TDD). As part of this philosophy, test are arranged' +
-            ' before the actual functionalities are implemented in the game code.',
+        description: t('projects.battleship.description'),
         techStack: ['html', 'css', 'js', 'jest'],
         otherTools: [],
         featured: true,
     },
     {
-        name: 'One Piece: Wanted',
+        id: 'onePiece',
+        name: t('projects.onePiece.title'),
         repository: 'memory-card',
         live: null,
         preview: '',
         icon: faSkullCrossbones,
-        description:
-            'One Piece themed memory card game. The goal is to locate the whereabouts of all the' +
-            ' members of the Worst Generation, without repetition. The goal of the project is to' +
-            ' React concepts such as functional hooks and lifecycle methods.',
+        description: t('projects.onePiece.description'),
         techStack: ['react'],
         otherTools: [],
         featured: true,
     },
     {
-        name: 'Etch-A-Sketch',
+        id: 'etchASketch',
+        name: t('projects.etchASketch.title'),
         repository: 'etch-a-sketch',
         live: null,
         preview: '',
         icon: faPalette,
-        description:
-            'Interactive web-based Etch-A-Sketch where you can draw while holding any mouse' +
-            ' button. It includes the possibility to modify the density of the grid, i.e. the' +
-            ' number of drawing squares (1–100). Additionally it includes three different paint' +
-            ' modes.',
+        description: t('projects.etchASketch.description'),
         techStack: ['html', 'css', 'js'],
         otherTools: [],
         featured: true,
     },
     {
-        name: 'Tic-Tac-Toe',
+        id: 'ticTacToe',
+        name: t('projects.ticTacToe.title'),
         repository: 'tic-tac-toe',
         live: null,
         preview: '',
         icon: faSquareXmark,
-        description:
-            'Game of Tic-Tac-Toe. You can play against another human player or against a robot.' +
-            ' The game keeps the score of the rounds played and the whole game can be reset.',
+        description: t('projects.ticTacToe.description'),
         techStack: ['html', 'css', 'js'],
         otherTools: [],
     },
 
     {
-        name: 'Rock, paper, scissors',
+        id: 'rockPaperScissors',
+        name: t('projects.rockPaperScissors.title'),
         repository: 'rock-paper-scissors',
         live: null,
         preview: '',
         icon: faHandScissors,
-        description:
-            'First project part of The Odin Project Full JavaScript Course meant to introduce' +
-            ' the aspiring programmer to the basic concepts of how to implement interactivity to' +
-            ' a webpage using JavaScript',
+        description: t('projects.rockPaperScissors.description'),
         techStack: ['html', 'css', 'js'],
         otherTools: [],
     },

@@ -31,14 +31,22 @@ export default function Header() {
                 <FontAwesomeIcon icon={faBars} id="menu-toggle" onClick={handleToggleMenu} />
                 <nav id="nav-items" className={isMenuHidden ? 'collapse' : ''}>
                     <ul>
-                        <NavItem to="/" icon={faHouse} title={t('navItems.home')} />
-                        <NavItem to="about" icon={faCircleInfo} title={t('navItems.about')} />
+                        <NavItem to="/" icon={faHouse} title={t('header.navItems.home')} />
+                        <NavItem
+                            to="about"
+                            icon={faCircleInfo}
+                            title={t('header.navItems.about')}
+                        />
                         <NavItem
                             to="experience"
                             icon={faBriefcase}
-                            title={t('navItems.experience')}
+                            title={t('header.navItems.experience')}
                         />
-                        <NavItem to="projects" icon={faLaptopCode} title={t('navItems.projects')} />
+                        <NavItem
+                            to="projects"
+                            icon={faLaptopCode}
+                            title={t('header.navItems.projects')}
+                        />
                     </ul>
                 </nav>
                 <div id="header-controls">

@@ -3,11 +3,14 @@ import './style.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 export default function Credits(props) {
+    const { t } = useTranslation();
+
     return (
         <div id="credits">
-            <p>Design and code</p>
+            <p>{t('footer')}</p>
             <a href={'https://github.com/ccardonaguillen/' + props.project}>
                 <FontAwesomeIcon icon={faGithub} id="github-logo" alt="Github" />
             </a>

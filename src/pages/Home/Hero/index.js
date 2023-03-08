@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { useTranslation } from 'react-i18next';
 import { faChevronDown, faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -18,41 +19,38 @@ export default function Hero() {
 }
 
 function Heading() {
+    const { t } = useTranslation();
+
     return (
         <Fragment>
             <h2 className="name">Carlos Cardona</h2>
-            <h1 className="header">Reskilled astrophysicist</h1>
-            <h1 className="header bold">Passionate programmer</h1>
+            <h1 className="header">{t('home.hero.header1')}</h1>
+            <h1 className="header bold">{t('home.hero.header2')}</h1>
         </Fragment>
     );
 }
 
 function Subheading() {
+    const { t } = useTranslation();
     return (
         <Fragment>
-            <p className="subheading">
-                Hi, I'm <span className="highlight">Carlos</span>
-            </p>
-            <p className="subheading">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Eget arcu dictum varius duis. At in
-                tellus integer feugiat scelerisque varius. Nec feugiat in fermentum posuere urna nec
-                tincidunt praesent semper. Eu scelerisque felis imperdiet proin fermentum leo vel
-                orci.
-            </p>
+            <p className="subheading">{t('home.hero.introduction')}</p>
+            <p className="subheading">{t('home.hero.subheading')}</p>
         </Fragment>
     );
 }
 
 function CallToAction() {
+    const { t } = useTranslation();
+
     return (
         <Fragment>
             <button id="go-to-contact">
                 <FontAwesomeIcon icon={faEnvelope} />
-                <span>Leave a message</span>
+                <span>{t('home.hero.cta.message')}</span>
             </button>
             <button id="read-more">
-                <span>Read more</span>
+                <span>{t('home.hero.cta.readMore')}</span>
                 <FontAwesomeIcon icon={faChevronDown} />
             </button>
         </Fragment>

@@ -1,4 +1,4 @@
-import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -6,9 +6,10 @@ import './style.css';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 export default function Contact() {
+    const { t } = useTranslation();
     return (
         <section id="home-contact">
-            <h3 className="heading">Find me on</h3>
+            <h3 className="heading">{t('home.contact.header')}</h3>
             <div id="contact-links">
                 <a href={'https://github.com/ccardonaguillen/'}>
                     <FontAwesomeIcon icon={faGithub} id="github-logo" alt="Github" />
@@ -17,7 +18,7 @@ export default function Contact() {
                     <FontAwesomeIcon icon={faLinkedin} id="github-logo" alt="Github" />
                 </a>
             </div>
-            <p>Or you leave a message below and I will get back to go you as soon as possible</p>
+            <p>{t('home.contact.subheading')}</p>
             <form id="contact-message" onSubmit={() => false}>
                 <div>
                     {/* <label htmlFor="name">Name</label> */}
@@ -25,7 +26,7 @@ export default function Contact() {
                         type="text"
                         id="name"
                         name="name"
-                        placeholder="Name"
+                        placeholder={t('home.contact.form.name')}
                         required={true}
                         autoComplete="off"
                     ></input>
@@ -36,7 +37,7 @@ export default function Contact() {
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="Email address"
+                        placeholder={t('home.contact.form.email')}
                         required={true}
                         autoComplete="off"
                     ></input>
@@ -47,13 +48,13 @@ export default function Contact() {
                         id="message"
                         name="message"
                         rows="5"
-                        placeholder="Your message"
+                        placeholder={t('home.contact.form.message')}
                         required={true}
                         autoComplete="off"
                     ></textarea>
                 </div>
                 <button type="submit" id="send-message">
-                    <p>Send</p>
+                    <p>{t('home.contact.form.send')}</p>
                     <FontAwesomeIcon icon={faEnvelope} />
                 </button>
             </form>

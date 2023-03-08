@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faChessBoard, faEarthEurope } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faChessBoard, faEarthEurope, faChess } from '@fortawesome/free-solid-svg-icons';
 
 import { apps, games } from '../../assets/lists/projects';
 import ProjectCard from '../../components/Card/ProjectCard';
@@ -8,7 +9,7 @@ import ProjectCard from '../../components/Card/ProjectCard';
 import './style.css';
 
 export default function Projects() {
-    const [category, setCategory] = useState('featured');
+    const [category, setCategory] = useState('all');
     const projectList = { all: apps.concat(games), apps, games };
     projectList['featured'] = projectList.all.filter((item) => item.featured);
 
@@ -21,68 +22,49 @@ export default function Projects() {
     return (
         <main id="projects">
             <div id="category-selector">
-                <div className={'category-container' + (category === 'all' ? ' selected' : '')}>
-                    <input
-                        type="radio"
-                        name="category"
-                        value="all"
-                        id="all"
-                        onClick={handleChangeCategory}
-                    />
-                    <label htmlFor="all">All</label>
-                </div>
-                <div
-                    className={'category-container' + (category === 'featured' ? ' selected' : '')}
-                >
-                    <input
-                        type="radio"
-                        name="category"
-                        value="featured"
-                        id="featured"
-                        onClick={handleChangeCategory}
-                    />
-                    <label htmlFor="featured">
-                        <FontAwesomeIcon icon={faStar} />
-                        Featured
-                    </label>
-                </div>
-
-                <div
-                    className={'category-container' + (category === 'apps' ? ' selected' : '')}
-                    data-key="apps"
-                >
-                    <input
-                        type="radio"
-                        name="category"
-                        value="apps"
-                        id="web-apps"
-                        onClick={handleChangeCategory}
-                    />
-                    <label htmlFor="web-apps">
-                        {' '}
-                        <FontAwesomeIcon icon={faEarthEurope} />
-                        Web-apps
-                    </label>
-                </div>
-                <div className={'category-container' + (category === 'games' ? ' selected' : '')}>
-                    <input
-                        type="radio"
-                        name="category"
-                        value="games"
-                        id="games"
-                        onClick={handleChangeCategory}
-                    />
-                    <label htmlFor="games">
-                        <FontAwesomeIcon icon={faChessBoard} />
-                        Browser games
-                    </label>
-                </div>
+                <CategoryButton
+                    id="all"
+                    currCategory={category}
+                    onCategoryChanged={handleChangeCategory}
+                />
+                <CategoryButton
+                    id="featured"
+                    icon={faStar}
+                    currCategory={category}
+                    onCategoryChanged={handleChangeCategory}
+                />
+                <CategoryButton
+                    id="apps"
+                    icon={faEarthEurope}
+                    currCategory={category}
+                    onCategoryChanged={handleChangeCategory}
+                />
+                <CategoryButton
+                    id="games"
+                    icon={faChessBoard}
+                    currCategory={category}
+                    onCategoryChanged={handleChangeCategory}
+                />
             </div>
             <div className="projects-container">
                 {projectList[category].map((details) => (
-                    <ProjectCard key={details.repository} {...details} />
+                    <ProjectCard key={details.id} {...details} />
                 ))}
             </div>
         </main>
+    );
+}
+
+function CategoryButton({ id, icon, currCategory, onCategoryChanged }) {
+    const { t } = useTranslation();
+
+    return (
+        <div className={'category-container' + (currCategory === id ? ' selected' : '')}>
+            <input type="radio" name="category" value={id} id={id} onClick={onCategoryChanged} />
+            <label htmlFor={id}>
+                <FontAwesomeIcon icon={icon} />
+                {t(`projects.categories.${id}`)}
+            </label>
+        </div>
     );
 }

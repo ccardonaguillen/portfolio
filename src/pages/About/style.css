@@ -1,2 +1,5 @@
-
-
+#about .hero>.subheading {
+    align-self: flex-end;
+    font-size: 2.2rem;
+    font-style: italic;
+}
